@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+	background-image: url('DSCF0875.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box {
+        width: 250px;
+        padding: 15px;
+		margin: 20px auto;
+}
+</style>
+<div class="box">
+<div id="statusPopup" style="display:none; padding:20px; background: white; border:1px solid #ccc; position:fixed; top: 40%; right: 20%;">
+  <a href="index.html">Please.</a>
+</div>
+<button onclick="showTemporaryPopup()">Don't go..</button>
+</div>
+<script>
+function showTemporaryPopup() {
+  const popup = document.getElementById("statusPopup");
+  popup.style.display = "block"; // Show the element
+
+  // Hide the element after 2 seconds
+  setTimeout(() => {
+    popup.style.display = "none";
+  }, 2000);
+}
+</script>
+</html>
